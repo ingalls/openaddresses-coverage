@@ -10,7 +10,7 @@ echo "GEOID,DONE" > $(dirname $0)/map/geoid.csv
 
 for SOURCE in $(find /tmp/openaddresses/sources/* -name "*.json"); do
     echo "# $SOURCE"
-   
+
     if [[ $(jq -r -c '.coverage | .country' $SOURCE) != "us" ]]; then
         echo "ok - only us supported"
         continue;
@@ -19,7 +19,7 @@ for SOURCE in $(find /tmp/openaddresses/sources/* -name "*.json"); do
     # Render States
     if [[ $(jq '.coverage | ."US Census" | .name' $SOURCE) == "null" ]] \
         && [[ $(jq '.coverage | ."US Census" | .state' $SOURCE) != "null" ]]
-    then    
+    then
         echo "ok - is a state"
         GEOID=$(jq -r -c '.coverage | ."US Census" | .geoid' $SOURCE)
         echo "$GEOID,yes" >> $(dirname $0)/map/geoid.csv
@@ -27,7 +27,7 @@ for SOURCE in $(find /tmp/openaddresses/sources/* -name "*.json"); do
     fi
 
     # Render Counties
-    if [[ $(jq '.coverage | .county' $SOURCE) == "null" ]]; then 
+    if [[ $(jq '.coverage | .county' $SOURCE) == "null" ]]; then
         echo "ok - not a county, skipping"
         continue;
     fi
