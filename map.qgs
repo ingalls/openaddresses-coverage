@@ -1,6 +1,8 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.10.1-Pisa">
+<qgis projectname="" version="2.18.0">
   <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="state20150817153755128" name="state">
@@ -39,6 +41,7 @@
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
+    <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="city_of_chadron20150819160423019"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4269" srcDatumTransform="-1" destDatumTransform="-1" layerid="state20150817153755128"/>
@@ -49,7 +52,6 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="buffalo20150819155810764"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
-  <visibility-presets/>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>county20150817153124067</item>
@@ -80,12 +82,16 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <projectlayers layercount="4">
+  <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+      <extent>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
+      </extent>
       <id>OpenLayers_plugin_layer20150819155904484</id>
       <datasource>.</datasource>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -106,11 +112,9 @@
         <property key="ol_layer_type" value="Google Streets"/>
       </customproperties>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>county20150817153124067</id>
       <datasource>/vsizip/./map/county.zip</datasource>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -136,43 +140,56 @@
           </joinFieldsSubset>
         </join>
       </vectorjoins>
+      <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="STATEFP" expression=""/>
+        <default field="COUNTYFP" expression=""/>
+        <default field="COUNTYNS" expression=""/>
+        <default field="AFFGEOID" expression=""/>
+        <default field="GEOID" expression=""/>
+        <default field="NAME" expression=""/>
+        <default field="LSAD" expression=""/>
+        <default field="ALAND" expression=""/>
+        <default field="AWATER" expression=""/>
+        <default field="DONE" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="STATEFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="COUNTYFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="COUNTYNS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="AFFGEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="NAME">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="LSAD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ALAND">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="AWATER">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 symbollevels="0" type="RuleRenderer">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{f2ccec6e-715f-44d2-bb19-4ed82ee8a558}">
           <rule key="{8495b61d-0e60-4c3a-abc8-98b2b0c8f5c0}" symbol="0" label="Incomplete"/>
           <rule description="Counties in OA" filter="DONE = 'yes'" key="{025cdbf7-bd0d-4049-a98c-0d9a308eb50b}" symbol="1" label="Complete"/>
@@ -180,222 +197,37 @@
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="255,255,255,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="127,127,127,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="dropShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="outerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="24,130,10,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="dropShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="outerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
         </symbols>
-        <effect enabled="0" type="effectStack">
-          <effect type="dropShadow">
-            <prop k="blend_mode" v="13"/>
-            <prop k="blur_level" v="10"/>
-            <prop k="color" v="0,0,0,255"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="offset_angle" v="135"/>
-            <prop k="offset_distance" v="2"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="offset_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="outerGlow">
-            <prop k="blend_mode" v="0"/>
-            <prop k="blur_level" v="3"/>
-            <prop k="color1" v="0,0,255,255"/>
-            <prop k="color2" v="0,255,0,255"/>
-            <prop k="color_type" v="0"/>
-            <prop k="discrete" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="single_color" v="255,255,255,255"/>
-            <prop k="spread" v="2"/>
-            <prop k="spread_unit" v="MM"/>
-            <prop k="spread_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0.5"/>
-          </effect>
-          <effect type="drawSource">
-            <prop k="blend_mode" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="1"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="innerShadow">
-            <prop k="blend_mode" v="13"/>
-            <prop k="blur_level" v="10"/>
-            <prop k="color" v="0,0,0,255"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="offset_angle" v="135"/>
-            <prop k="offset_distance" v="2"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="offset_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="innerGlow">
-            <prop k="blend_mode" v="0"/>
-            <prop k="blur_level" v="3"/>
-            <prop k="color1" v="0,0,255,255"/>
-            <prop k="color2" v="0,255,0,255"/>
-            <prop k="color_type" v="0"/>
-            <prop k="discrete" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="single_color" v="255,255,255,255"/>
-            <prop k="spread" v="2"/>
-            <prop k="spread_unit" v="MM"/>
-            <prop k="spread_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0.5"/>
-          </effect>
-        </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
@@ -564,59 +396,70 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+      <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform>.</editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
-      <editorlayout>generatedlayout</editorlayout>
+      <aliases>
+        <alias field="STATEFP" index="0" name=""/>
+        <alias field="COUNTYFP" index="1" name=""/>
+        <alias field="COUNTYNS" index="2" name=""/>
+        <alias field="AFFGEOID" index="3" name=""/>
+        <alias field="GEOID" index="4" name=""/>
+        <alias field="NAME" index="5" name=""/>
+        <alias field="LSAD" index="6" name=""/>
+        <alias field="ALAND" index="7" name=""/>
+        <alias field="AWATER" index="8" name=""/>
+        <alias field="DONE" index="9" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="STATEFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="COUNTYFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="COUNTYNS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AFFGEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NAME">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="LSAD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="ALAND">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AWATER">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>geoid20150817153404659</id>
       <datasource>file:./map/geoid.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -637,40 +480,50 @@
       <provider encoding="System">delimitedtext</provider>
       <previewExpression>COALESCE("GEOID", '&lt;NULL>')||', '||COALESCE("DONE", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
+      <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="GEOID" expression=""/>
+        <default field="DONE" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <editform>.</editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
       <annotationform>.</annotationform>
-      <editorlayout>generatedlayout</editorlayout>
+      <aliases>
+        <alias field="GEOID" index="0" name=""/>
+        <alias field="DONE" index="1" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
+      <attributeactions default="0"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>state20150817153755128</id>
       <datasource>/vsizip/./map/state.zip</datasource>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -696,43 +549,56 @@
           </joinFieldsSubset>
         </join>
       </vectorjoins>
+      <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="STATEFP" expression=""/>
+        <default field="STATENS" expression=""/>
+        <default field="AFFGEOID" expression=""/>
+        <default field="GEOID" expression=""/>
+        <default field="STUSPS" expression=""/>
+        <default field="NAME" expression=""/>
+        <default field="LSAD" expression=""/>
+        <default field="ALAND" expression=""/>
+        <default field="AWATER" expression=""/>
+        <default field="DONE" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="STATEFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="STATENS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="AFFGEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="STUSPS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="NAME">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="LSAD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ALAND">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="AWATER">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 symbollevels="0" type="RuleRenderer">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{86484299-fd50-4867-91dd-cd35d4e298fc}">
           <rule key="{594c0c0c-47cf-4f8e-9680-e2a8aed917c3}" symbol="0" label="Incomplete"/>
           <rule filter="DONE = 'yes'&#xa;" key="{fb695dfc-57ff-4f04-b53b-5ed27d089bec}" symbol="1" label="Complete"/>
@@ -740,222 +606,37 @@
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="255,255,255,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.5"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="dropShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="outerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="24,130,10,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="dropShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="outerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerShadow">
-                  <prop k="blend_mode" v="13"/>
-                  <prop k="blur_level" v="10"/>
-                  <prop k="color" v="0,0,0,255"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="offset_angle" v="135"/>
-                  <prop k="offset_distance" v="2"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="offset_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-                <effect type="innerGlow">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="blur_level" v="3"/>
-                  <prop k="color1" v="0,0,255,255"/>
-                  <prop k="color2" v="0,255,0,255"/>
-                  <prop k="color_type" v="0"/>
-                  <prop k="discrete" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="0"/>
-                  <prop k="single_color" v="255,255,255,255"/>
-                  <prop k="spread" v="2"/>
-                  <prop k="spread_unit" v="MM"/>
-                  <prop k="spread_unit_scale" v="0,0"/>
-                  <prop k="transparency" v="0.5"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
         </symbols>
-        <effect enabled="0" type="effectStack">
-          <effect type="dropShadow">
-            <prop k="blend_mode" v="13"/>
-            <prop k="blur_level" v="10"/>
-            <prop k="color" v="0,0,0,255"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="offset_angle" v="135"/>
-            <prop k="offset_distance" v="2"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="offset_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="outerGlow">
-            <prop k="blend_mode" v="0"/>
-            <prop k="blur_level" v="3"/>
-            <prop k="color1" v="0,0,255,255"/>
-            <prop k="color2" v="0,255,0,255"/>
-            <prop k="color_type" v="0"/>
-            <prop k="discrete" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="single_color" v="255,255,255,255"/>
-            <prop k="spread" v="2"/>
-            <prop k="spread_unit" v="MM"/>
-            <prop k="spread_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0.5"/>
-          </effect>
-          <effect type="drawSource">
-            <prop k="blend_mode" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="1"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="innerShadow">
-            <prop k="blend_mode" v="13"/>
-            <prop k="blur_level" v="10"/>
-            <prop k="color" v="0,0,0,255"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="offset_angle" v="135"/>
-            <prop k="offset_distance" v="2"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="offset_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-          <effect type="innerGlow">
-            <prop k="blend_mode" v="0"/>
-            <prop k="blur_level" v="3"/>
-            <prop k="color1" v="0,0,255,255"/>
-            <prop k="color2" v="0,255,0,255"/>
-            <prop k="color_type" v="0"/>
-            <prop k="discrete" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="0"/>
-            <prop k="single_color" v="255,255,255,255"/>
-            <prop k="spread" v="2"/>
-            <prop k="spread_unit" v="MM"/>
-            <prop k="spread_unit_scale" v="0,0"/>
-            <prop k="transparency" v="0.5"/>
-          </effect>
-        </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
@@ -1124,56 +805,73 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+      <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform>.</editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
-      <editorlayout>generatedlayout</editorlayout>
+      <aliases>
+        <alias field="STATEFP" index="0" name=""/>
+        <alias field="STATENS" index="1" name=""/>
+        <alias field="AFFGEOID" index="2" name=""/>
+        <alias field="GEOID" index="3" name=""/>
+        <alias field="STUSPS" index="4" name=""/>
+        <alias field="NAME" index="5" name=""/>
+        <alias field="LSAD" index="6" name=""/>
+        <alias field="ALAND" index="7" name=""/>
+        <alias field="AWATER" index="8" name=""/>
+        <alias field="DONE" index="9" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="STATEFP">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="STATENS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AFFGEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="GEOID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="STUSPS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NAME">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="LSAD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="ALAND">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AWATER">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="DONE">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
+      <attributeactions default="0"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
     </maplayer>
   </projectlayers>
   <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
     <SpatialRefSys>
       <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
@@ -1227,4 +925,5 @@
       <filterByMap type="bool">false</filterByMap>
     </Legend>
   </properties>
+  <visibility-presets/>
 </qgis>
