@@ -12,11 +12,17 @@ GEOID,DONE
 01015,yes
 01033,yes
 01051,yes
+01055,yes
 01073,yes
+01089,yes
 01101,yes
 01117,yes
 01115,yes
+01121,yes
 01125,yes
+05009,yes
+04003,yes
+04005,yes
 04007,yes
 04013,yes
 04015,yes
@@ -52,6 +58,7 @@ GEOID,DONE
 06057,yes
 06059,yes
 06061,yes
+06063,yes
 06065,yes
 06067,yes
 06071,yes
@@ -68,7 +75,9 @@ GEOID,DONE
 06097,yes
 06099,yes
 06101,yes
+06103,yes
 06105,yes
+06107,yes
 06109,yes
 06111,yes
 06113,yes
@@ -160,6 +169,7 @@ GEOID,DONE
 13075,yes
 13093,yes
 13095,yes
+13097,yes
 13099,yes
 13101,yes
 13109,yes
@@ -184,6 +194,7 @@ GEOID,DONE
 13205,yes
 13209,yes
 13215,yes
+13223,yes
 13229,yes
 13239,yes
 13243,yes
@@ -205,6 +216,7 @@ GEOID,DONE
 13319,yes
 13321,yes
 15003,yes
+15009,yes
 19001,yes
 19011,yes
 19015,yes
@@ -395,12 +407,13 @@ GEOID,DONE
 20191,yes
 20193,yes
 20197,yes
-05009,yes
 21049,yes
 21093,yes
 21111,yes
+05117,yes
 21067,yes
 21145,yes
+21163,yes
 21185,yes
 21227,yes
 22005,yes
@@ -514,8 +527,10 @@ GEOID,DONE
 22125,yes
 28047,yes
 28049,yes
+28059,yes
 28089,yes
 28115,yes
+28121,yes
 28127,yes
 30001,yes
 30003,yes
@@ -591,6 +606,7 @@ GEOID,DONE
 37047,yes
 37049,yes
 37059,yes
+37063,yes
 37067,yes
 37069,yes
 37077,yes
@@ -623,6 +639,8 @@ GEOID,DONE
 38033,yes
 38053,yes
 38089,yes
+38093,yes
+38101,yes
 38105,yes
 31003,yes
 31005,yes
@@ -705,6 +723,7 @@ GEOID,DONE
 31185,yes
 33,yes
 34009,yes
+34025,yes
 34027,yes
 35001,yes
 35013,yes
@@ -817,6 +836,8 @@ GEOID,DONE
 39173,yes
 39175,yes
 40019,yes
+40109,yes
+40143,yes
 41003,yes
 41005,yes
 41025,yes
@@ -874,6 +895,7 @@ GEOID,DONE
 42119,yes
 42121,yes
 42127,yes
+42133,yes
 72,yes
 44,yes
 45003,yes
@@ -901,6 +923,7 @@ GEOID,DONE
 47009,yes
 47021,yes
 47051,yes
+47065,yes
 47089,yes
 47119,yes
 47125,yes
@@ -1032,6 +1055,7 @@ GEOID,DONE
 50,yes
 53007,yes
 53009,yes
+53011,yes
 53015,yes
 53017,yes
 53019,yes
@@ -1048,12 +1072,14 @@ GEOID,DONE
 53047,yes
 53049,yes
 53051,yes
+53053,yes
 53055,yes
 53033,yes
 53057,yes
 53061,yes
 53061,yes
 53063,yes
+5380010,yes
 53071,yes
 55001,yes
 55007,yes
@@ -1111,4 +1137,6 @@ GEOID,DONE
 56017,yes
 56021,yes
 56025,yes
+56,yes
+56035,yes
 56039,yes
