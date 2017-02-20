@@ -25,12 +25,15 @@ if [[ $(jq '.coverage | .county' $SOURCE) == "null" ]]; then
     echo "ok - not a county, skipping"
     exit;
 fi
-GEOID=$(jq -r -c '.coverage | ."US Census" | .geoid' $SOURCE)
 
-if [[ $GEOID == "null" ]]; then
-    echo "not ok - missing geoid"
+GEOID=$(jq -r -c '.coverage | ."US Census" | .geoid' $SOURCE)
+if [[ $GEOID != "null" ]]; then
+    echo "$GEOID,yes" >> $(dirname $0)/map/geoid.csv
     exit
 fi
 
-echo "$GEOID,yes" >> $(dirname $0)/map/geoid.csv
-
+GEOJSON=$(jq -r -c '.coverage | ."geometry"' $SOURCE)
+if [[ $GEOJSON != "null" ]]; then
+    echo "{ \"type\": \"Feature\", \"properties\": {}, \"geometry\": $GEOJSON }" >> $(dirname $0)/map/geom.geojson
+    exit
+fi
