@@ -1,15 +1,15 @@
 GEOID,DONE
 02020,yes
 02090,yes
-02130,yes
 02122,yes
+02130,yes
 02150,yes
 02170,yes
 02282,yes
 01003,yes
 01009,yes
-01015,yes
 01011,yes
+01015,yes
 01033,yes
 01051,yes
 01055,yes
@@ -101,8 +101,8 @@ GEOID,DONE
 08049,yes
 08051,yes
 08059,yes
-08069,yes
 08067,yes
+08069,yes
 08077,yes
 08079,yes
 08081,yes
@@ -118,8 +118,8 @@ GEOID,DONE
 08121,yes
 08123,yes
 09,yes
-10001,yes
 11,yes
+10001,yes
 10003,yes
 10005,yes
 12,yes
@@ -155,8 +155,8 @@ GEOID,DONE
 13005,yes
 13015,yes
 13017,yes
-13019,yes
 13021,yes
+13019,yes
 13023,yes
 13025,yes
 13027,yes
@@ -291,8 +291,8 @@ GEOID,DONE
 16005,yes
 16011,yes
 16013,yes
-16017,yes
 16019,yes
+16017,yes
 16027,yes
 16035,yes
 16037,yes
@@ -552,8 +552,8 @@ GEOID,DONE
 28047,yes
 28049,yes
 28059,yes
-28089,yes
 28115,yes
+28089,yes
 28121,yes
 28127,yes
 30001,yes
@@ -611,8 +611,8 @@ GEOID,DONE
 30105,yes
 30107,yes
 30109,yes
-37001,yes
 30111,yes
+37001,yes
 37003,yes
 37005,yes
 37007,yes
@@ -694,8 +694,8 @@ GEOID,DONE
 31055,yes
 31059,yes
 31061,yes
-31067,yes
 31063,yes
+31067,yes
 31069,yes
 31071,yes
 31073,yes
@@ -881,8 +881,8 @@ GEOID,DONE
 41067,yes
 41069,yes
 41071,yes
-42003,yes
 42001,yes
+42003,yes
 42005,yes
 42007,yes
 42009,yes
@@ -976,8 +976,8 @@ GEOID,DONE
 4826232,yes
 4870808,yes
 48085,yes
-48091,yes
 48089,yes
+48091,yes
 48093,yes
 48099,yes
 48111,yes
@@ -1056,8 +1056,8 @@ GEOID,DONE
 51015,yes
 51019,yes
 51031,yes
-51057,yes
 51043,yes
+51057,yes
 51059,yes
 51065,yes
 51067,yes
