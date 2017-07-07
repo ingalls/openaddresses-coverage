@@ -46,9 +46,9 @@ if [[ $COUNTRY == "us" ]]; then
     fi
 elif [[ $COUNTRY == "ca" ]]; then
     # Render Provinces
-    if [[ $(jq '.coverage | ."ISO 3166" | .province' $SOURCE) != "null" ]]; then
+    if [[ $(jq '.coverage | ."ISO 3166" | .subdivision' $SOURCE) != "null" ]]; then
         echo "ok - is a province/territory"
-        GEOID=$(jq -r -c '.coverage | ."ISO 3166" | .province' $SOURCE)
+        GEOID=$(jq -r -c '.coverage | ."ISO 3166" | .subdivision' $SOURCE)
 
         echo "$GEOID,yes" >> $(dirname $0)/map/cageoid.csv
         exit

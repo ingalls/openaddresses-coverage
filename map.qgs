@@ -38,10 +38,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-15136430.58059187047183514</xmin>
-      <ymin>3097329.82985651772469282</ymin>
-      <xmax>-8526950.66285183094441891</xmax>
-      <ymax>5275181.52669720631092787</ymax>
+      <xmin>-15571453.21943783015012741</xmin>
+      <ymin>4855917.6630727257579565</ymin>
+      <xmax>-5083104.79065119475126266</xmax>
+      <ymax>8311873.00403389893472195</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -243,7 +243,7 @@ def my_form_open(dialog, layer, feature):
         <default field="GEOID" expression=""/>
         <default field="DONE" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("GEOID", '&lt;NULL>')||', '||COALESCE("DONE", '&lt;NULL>')</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -272,7 +272,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">ogr</provider>
       <vectorjoins>
-        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="0" joinLayerId="geoid20150817153404659">
+        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20150817153404659">
           <joinFieldsSubset>
             <field name="DONE"/>
           </joinFieldsSubset>
@@ -310,6 +310,9 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="TextEdit" name="AWATER">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DONE">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -543,7 +546,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -582,6 +585,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="LSAD" index="6" name=""/>
         <alias field="ALAND" index="7" name=""/>
         <alias field="AWATER" index="8" name=""/>
+        <alias field="DONE" index="9" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -598,6 +602,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="ALAND"/>
           <column width="-1" hidden="0" type="field" name="AWATER"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="DONE"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -638,6 +643,7 @@ def my_form_open(dialog, layer, feature):
         <default field="LSAD" expression=""/>
         <default field="ALAND" expression=""/>
         <default field="AWATER" expression=""/>
+        <default field="DONE" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -673,17 +679,17 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="01003_1">
+        <edittype widgetv2type="TextEdit" name="GEOID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="yes">
+        <edittype widgetv2type="TextEdit" name="DONE">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="01003_1" index="0" name=""/>
-        <alias field="yes" index="1" name=""/>
+        <alias field="GEOID" index="0" name=""/>
+        <alias field="DONE" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -724,8 +730,8 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <defaults>
-        <default field="01003_1" expression=""/>
-        <default field="yes" expression=""/>
+        <default field="GEOID" expression=""/>
+        <default field="DONE" expression=""/>
       </defaults>
       <previewExpression>COALESCE("GEOID", '&lt;NULL>')||', '||COALESCE("DONE", '&lt;NULL>')</previewExpression>
     </maplayer>
@@ -1714,7 +1720,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">ogr</provider>
       <vectorjoins>
-        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="0" joinLayerId="geoid20150817153404659">
+        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20150817153404659">
           <joinFieldsSubset>
             <field name="DONE"/>
           </joinFieldsSubset>
@@ -1752,6 +1758,9 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="TextEdit" name="AWATER">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DONE">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -2024,6 +2033,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="LSAD" index="6" name=""/>
         <alias field="ALAND" index="7" name=""/>
         <alias field="AWATER" index="8" name=""/>
+        <alias field="DONE" index="9" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2081,6 +2091,7 @@ def my_form_open(dialog, layer, feature):
         <default field="LSAD" expression=""/>
         <default field="ALAND" expression=""/>
         <default field="AWATER" expression=""/>
+        <default field="DONE" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
     </maplayer>
