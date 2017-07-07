@@ -6,8 +6,8 @@ SOURCE=$1
 echo "# $SOURCE"
 
 COUNTRY=$(jq -r -c '.coverage | .country' $SOURCE)
-if [[ $COUNTRY != "us" || $COUNTRY != "ca" ||  ]]; then
-    echo "ok - only us supported"
+if [[ $COUNTRY != "us" && $COUNTRY != "ca" ]]; then
+    echo "ok - only us/ca supported"
     exit;
 fi
 
@@ -45,5 +45,12 @@ if [[ $COUNTRY == "us" ]]; then
         exit
     fi
 elif [[ $COUNTRY == "ca" ]]; then
-    echo "CANADA"
+    # Render Provinces
+    if [[ $(jq '.coverage | ."ISO 3166" | .province' $SOURCE) != "null" ]]; then
+        echo "ok - is a province/territory"
+        GEOID=$(jq -r -c '.coverage | ."ISO 3166" | .province' $SOURCE)
+
+        echo "$GEOID,yes" >> $(dirname $0)/map/cageoid.csv
+        exit
+    fi
 fi
