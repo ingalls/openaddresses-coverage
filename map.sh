@@ -12,6 +12,7 @@ echo "GEOID,DONE" > $(dirname $0)/map/geoid.csv
 echo '{ "type": "FeatureCollection", "features": [' > $(dirname $0)/map/geom.geojson
 
 parallel ./source.sh {} ::: $(find /tmp/openaddresses/sources/us/* -name "*.json")
+parallel ./source.sh {} ::: $(find /tmp/openaddresses/sources/ca/* -name "*.json")
 
 sed -i '' 's/}$/},/' $(dirname $0)/map/geom.geojson
 sed -i '' '$ s/.$//' $(dirname $0)/map/geom.geojson
