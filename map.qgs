@@ -25,13 +25,11 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="geom_OGRGeoJSON_Polygon20170220121827698" source="/Users/null/Development/openaddresses-coverage/map/geom.geojson|layerid=0|geometrytype=Polygon" name="Custom Poly">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="cageoid20170707115434289" source="file:///Users/null/Development/openaddresses-coverage/map/cageoid.csv?encoding=latin1&amp;type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" name="CA GEOID">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="geoid20170710050735844" source="/Users/null/Development/openaddresses-coverage/map/geoid.csv" name="US GEOID">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="geoid20150817153404659" source="file:///Users/null/Development/openaddresses-coverage/map/geoid.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" name="US GEOID">
-      <customproperties>
-        <property key="showFeatureCount" value="1"/>
-      </customproperties>
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="cageoid20170707115434289" source="file:///Users/null/Development/openaddresses-coverage/map/cageoid.csv?encoding=latin1&amp;type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" name="CA GEOID">
+      <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OpenLayers_plugin_layer20150819155904484" source="/Users/null/Development/openaddresses-coverage" name="Google Streets">
       <customproperties/>
@@ -41,10 +39,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-15676914.33306173048913479</xmin>
-      <ymin>4553099.85963817592710257</ymin>
-      <xmax>-5188565.90427509509027004</xmax>
-      <ymax>8009055.20059927459806204</ymax>
+      <xmin>-17189252.95830733329057693</xmin>
+      <ymin>4315046.55751618277281523</ymin>
+      <xmax>-6700904.52952069975435734</xmax>
+      <ymax>7771001.8984772814437747</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -86,7 +84,6 @@
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>county20150817153124067</item>
-      <item>geoid20150817153404659</item>
       <item>state20150817153755128</item>
       <item>OpenLayers_plugin_layer20150819155904484</item>
       <item>geom_OGRGeoJSON_Point20170220121827677</item>
@@ -94,6 +91,7 @@
       <item>province20170707114408787</item>
       <item>cageoid20170707115434289</item>
       <item>ca_district20170707135900594</item>
+      <item>geoid20170710050735844</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -127,14 +125,14 @@
         <legendlayerfile isInOverview="0" layerid="geom_OGRGeoJSON_Polygon20170220121827698" visible="1"/>
       </filegroup>
     </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="US GEOID" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="geoid20170710050735844" visible="1"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="CA GEOID" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="cageoid20170707115434289" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="US GEOID" showFeatureCount="1">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="geoid20150817153404659" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Streets" showFeatureCount="0">
@@ -422,6 +420,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -626,7 +625,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">ogr</provider>
       <vectorjoins>
-        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20150817153404659">
+        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20170710050735844">
           <joinFieldsSubset>
             <field name="DONE"/>
           </joinFieldsSubset>
@@ -1002,8 +1001,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>geoid20150817153404659</id>
-      <datasource>file:./map/geoid.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <id>geoid20170710050735844</id>
+      <datasource>./map/geoid.csv</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1025,7 +1024,7 @@ def my_form_open(dialog, layer, feature):
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
-      <provider encoding="System">delimitedtext</provider>
+      <provider encoding="UTF-8">ogr</provider>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1040,7 +1039,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>.</annotationform>
+      <annotationform></annotationform>
       <aliases>
         <alias field="GEOID" index="0" name=""/>
         <alias field="DONE" index="1" name=""/>
@@ -1048,17 +1047,17 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="929036720">
         <columns>
-          <column width="-1" hidden="0" type="field" name="01003_1"/>
-          <column width="-1" hidden="0" type="field" name="yes"/>
+          <column width="-1" hidden="0" type="field" name="GEOID"/>
+          <column width="-1" hidden="0" type="field" name="DONE"/>
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>.</editform>
+      <editform></editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1087,7 +1086,7 @@ def my_form_open(dialog, layer, feature):
         <default field="GEOID" expression=""/>
         <default field="DONE" expression=""/>
       </defaults>
-      <previewExpression>COALESCE("GEOID", '&lt;NULL>')||', '||COALESCE("DONE", '&lt;NULL>')</previewExpression>
+      <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -2074,7 +2073,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">ogr</provider>
       <vectorjoins>
-        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20150817153404659">
+        <join hasCustomPrefix="1" joinFieldName="GEOID" customPrefix="" targetFieldName="GEOID" memoryCache="1" joinLayerId="geoid20170710050735844">
           <joinFieldsSubset>
             <field name="DONE"/>
           </joinFieldsSubset>
@@ -2476,6 +2475,7 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
+        <value>ca_district20170707135900594</value>
         <value>county20150817153124067</value>
         <value>geom_OGRGeoJSON_Point20170220121827677</value>
         <value>geom_OGRGeoJSON_Polygon20170220121827698</value>
@@ -2483,6 +2483,7 @@ def my_form_open(dialog, layer, feature):
         <value>state20150817153755128</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>enabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -2497,8 +2498,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -2508,6 +2511,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
