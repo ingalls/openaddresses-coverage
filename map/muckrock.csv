@@ -1,0 +1,267 @@
+User,Title,Status,URL,Jurisdiction,Jurisdiction ID,Agency,Agency ID,Followup Date,Estimated Completion Date,Description,Tracking Number,Embargo,Days since submitted,Days since updated,Projects,Tags
+ingalls,Civic Address Dataset,Processing,www.muckrock.com/foi/luzerne-27946/civic-address-dataset-46053/,Luzerne,27946,Open Records,10366,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",17-218,False,6,0,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/montgomery-county-27301/civic-address-dataset-46072/,Montgomery County,27301,Open Records,10375,2017-12-13,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,0,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Completed,www.muckrock.com/foi/montour-county-27302/civic-address-dataset-46074/,Montour County,27302,Open Records,10377,2017-12-13,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,0,OpenAddresses US FOIA Data Collection,openaddresses
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/clarion-county-27271/civic-address-dataset-46080/,Clarion County,27271,Open Records,10382,2017-12-13,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Cheboygan MI, Civic Address Data",Processing,www.muckrock.com/foi/cheboygan-county-16679/cheboygan-mi-civic-address-data-46196/,Cheboygan County,16679,Open Records,10409,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Preque Isle MI, Civic Address Data",Processing,www.muckrock.com/foi/presque-isle-county-16734/preque-isle-mi-civic-address-data-46197/,Presque Isle County,16734,Open Records,10410,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Charlevoix MI, Civic Address Data",Processing,www.muckrock.com/foi/charlevoix-county-16678/charlevoix-mi-civic-address-data-46198/,Charlevoix County,16678,Open Records,10411,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Antrim MI, Civic Address Data",Processing,www.muckrock.com/foi/antrim-county-16668/antrim-mi-civic-address-data-46199/,Antrim County,16668,Open Records,10412,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Otsego MI, Civic Address Data",Processing,www.muckrock.com/foi/otsego-county-16732/otsego-mi-civic-address-data-46200/,Otsego County,16732,Open Records,10413,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Montmorency MI, Civic Address Data",Processing,www.muckrock.com/foi/montmorency-county-16723/montmorency-mi-civic-address-data-46201/,Montmorency County,16723,Open Records,10414,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Alpena MI, Civic Address Data",Processing,www.muckrock.com/foi/alpena-county-16667/alpena-mi-civic-address-data-46202/,Alpena County,16667,Open Records,10415,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Leelanau MI, Civic Address Data",Processing,www.muckrock.com/foi/leelanau-county-16708/leelanau-mi-civic-address-data-46203/,Leelanau County,16708,Open Records,10416,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Benzie MI, Civic Address Data",Processing,www.muckrock.com/foi/benzie-county-16673/benzie-mi-civic-address-data-46204/,Benzie County,16673,Open Records,10417,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Kalkaska MI, Civic Address Data",Processing,www.muckrock.com/foi/kalkaska-county-16703/kalkaska-mi-civic-address-data-46205/,Kalkaska County,16703,Open Records,10418,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Crawford MI, Civic Address Data",Processing,www.muckrock.com/foi/crawford-county-16683/crawford-mi-civic-address-data-46206/,Crawford County,16683,Open Records,10419,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Oscoda MI, Civic Address Data",Processing,www.muckrock.com/foi/oscoda-county-16731/oscoda-mi-civic-address-data-46207/,Oscoda County,16731,Open Records,10420,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Alcona MI, Civic Address Data",Processing,www.muckrock.com/foi/alcona-county-16664/alcona-mi-civic-address-data-46208/,Alcona County,16664,Open Records,10421,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Manistee MI, Civic Address Data",Processing,www.muckrock.com/foi/manistee-county-16714/manistee-mi-civic-address-data-46211/,Manistee County,16714,Open Records,10422,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Wexford MI, Civic Address Data",Processing,www.muckrock.com/foi/wexford-county-16746/wexford-mi-civic-address-data-46212/,Wexford County,16746,Open Records,10423,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Missaukee MI, Civic Address Data",Processing,www.muckrock.com/foi/missaukee-county-16720/missaukee-mi-civic-address-data-46213/,Missaukee County,16720,Open Records,10424,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Roscommon MI, Civic Address Data",Processing,www.muckrock.com/foi/roscommon-county-16735/roscommon-mi-civic-address-data-46214/,Roscommon County,16735,Open Records,10425,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Ogemaw MI, Civic Address Data",Processing,www.muckrock.com/foi/ogemaw-county-16728/ogemaw-mi-civic-address-data-46215/,Ogemaw County,16728,Open Records,10426,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Iosco MI, Civic Address Data",Processing,www.muckrock.com/foi/iosco-county-16698/iosco-mi-civic-address-data-46216/,Iosco County,16698,Open Records,10427,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Mason MI, Civic Address Data",Processing,www.muckrock.com/foi/mason-county-16716/mason-mi-civic-address-data-46217/,Mason County,16716,Open Records,10428,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Lake MI, Civic Address Data",Processing,www.muckrock.com/foi/lake-county-16706/lake-mi-civic-address-data-46218/,Lake County,16706,Open Records,10429,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Osceola MI, Civic Address Data",Processing,www.muckrock.com/foi/osceola-county-16730/osceola-mi-civic-address-data-46219/,Osceola County,16730,Open Records,10430,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Clare MI, Civic Address Data",Processing,www.muckrock.com/foi/clare-county-16681/clare-mi-civic-address-data-46220/,Clare County,16681,Open Records,10431,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Gladwin MI, Civic Address Data",Processing,www.muckrock.com/foi/gladwin-county-16689/gladwin-mi-civic-address-data-46221/,Gladwin County,16689,Open Records,10432,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,"Arenac MI, Civic Address Data",Processing,www.muckrock.com/foi/arenac-county-16669/arenac-mi-civic-address-data-46222/,Arenac County,16669,Open Records,10433,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,,0,,
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/susquehanna-county-27312/civic-address-dataset-46048/,Susquehanna County,27312,GIS Department,10361,2017-12-12,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,1,OpenAddresses US FOIA Data Collection,openaddresses
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/warren-county-27316/civic-address-dataset-46079/,Warren County,27316,Open Records,10381,2017-12-12,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,1,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/huntingdon-county-27286/civic-address-dataset-46076/,Huntingdon County,27286,Open Records,10379,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,5,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/westmorel-county-1079/civic-address-dataset-46088/,Westmoreland County,1079,Open Records,10384,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,5,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/washington-county-27317/civic-address-dataset-46089/,Washington County,27317,Open Records,10385,2017-12-22,2017-12-22,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,5,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/north-dakota-232/civic-address-dataset-46045/,North Dakota,232,Department of Emergency Services,7221,,,"I would appreciate your help in securing the following address point data for all available counties in ND:
+
+Address (house # and street name)
+Latitude/Longitude
+
+If this cannot be accessed, the parcel information on addresses would help greatly.",,False,7,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/bradford-27978/civic-address-dataset-46050/,Bradford,27978,Open Records,10362,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/wyoming-27963/civic-address-dataset-46052/,Wyoming,27963,Open Records,10364,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/luzerne-27946/civic-address-dataset-46056/,Luzerne,27946,Open Records,10366,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/schuylkill-county-27308/civic-address-dataset-46068/,Schuylkill County,27308,Open Records,10371,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/dauphin-county-27277/civic-address-dataset-46069/,Dauphin County,27277,Open Records,10372,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/lebanon-county-27293/civic-address-dataset-46071/,Lebanon County,27293,GIS,10374,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/delaware-county-27278/civic-address-dataset-46073/,Delaware County,27278,Open Records,10376,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/indiana-county-27287/civic-address-dataset-46083/,Indiana County,27287,Open Records,10383,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,6,7,OpenAddresses US FOIA Data Collection,
