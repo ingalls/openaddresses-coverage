@@ -4,7 +4,7 @@ Generates a QGIS project that shows the current openaddresses coverage
 
 ## Instructions
 
-Run `./map.sh` to update the QGIS map file
+Run `./update.sh` to update the QGIS map file
 
 ## Dependancies
 
