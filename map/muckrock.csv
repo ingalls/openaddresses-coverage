@@ -9,6 +9,13 @@ ingalls,Civic Address Dataset,Awaiting Response,www.muckrock.com/foi/clarion-cou
 If this cannot be accessed, the parcel file including situs address would suffice.
 
 Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,13,0,OpenAddresses US FOIA Data Collection,
+ingalls,"Cheboygan MI, Civic Address Data",Awaiting Response,www.muckrock.com/foi/cheboygan-county-16679/cheboygan-mi-civic-address-data-46196/,Cheboygan County,16679,Open Records,10409,2017-12-10,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+
+If this cannot be accessed, the parcel file including situs address would suffice.
+
+Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
+
+I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,6,0,OpenAddresses US FOIA Data Collection,
 ingalls,"Lake MI, Civic Address Data",Withdrawn,www.muckrock.com/foi/lake-county-16706/lake-mi-civic-address-data-46218/,Lake County,16706,Open Records,10429,2017-12-20,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
 
 If this cannot be accessed, the parcel file including situs address would suffice.
@@ -37,7 +44,7 @@ If this cannot be accessed, the parcel file including situs address would suffic
 Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
 
 I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,5,0,OpenAddresses US FOIA Data Collection,
-ingalls,"Lake MI, GIS Data Distribution",Awaiting Acknowledgement,www.muckrock.com/foi/lake-county-16706/lake-mi-gis-data-distribution-46423/,Lake County,16706,Open Records,10429,,,"Any and all records pertaining to the distribution, sharing, or purchase of the county's Parcel/Civic Address Layer
+ingalls,"Lake MI, GIS Data Distribution",Awaiting Response,www.muckrock.com/foi/lake-county-16706/lake-mi-gis-data-distribution-46423/,Lake County,16706,Open Records,10429,2017-12-12,,"Any and all records pertaining to the distribution, sharing, or purchase of the county's Parcel/Civic Address Layer
 
 More specifically: 
 - all emails between county employees regarding the purchase, sale, or distribution of the county's parcel/address GIS dataset.
@@ -544,13 +551,6 @@ ingalls,Civic Address Dataset,Completed,www.muckrock.com/foi/montour-county-2730
 If this cannot be accessed, the parcel file including situs address would suffice.
 
 Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,13,7,OpenAddresses US FOIA Data Collection,openaddresses
-ingalls,"Cheboygan MI, Civic Address Data",Awaiting Acknowledgement,www.muckrock.com/foi/cheboygan-county-16679/cheboygan-mi-civic-address-data-46196/,Cheboygan County,16679,Open Records,10409,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
-
-If this cannot be accessed, the parcel file including situs address would suffice.
-
-Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.
-
-I also intent to publish the data via the OpenAddresses Publication platform and would request a waiver of fees for the request.",,False,6,7,OpenAddresses US FOIA Data Collection,
 ingalls,"Preque Isle MI, Civic Address Data",Awaiting Acknowledgement,www.muckrock.com/foi/presque-isle-county-16734/preque-isle-mi-civic-address-data-46197/,Presque Isle County,16734,Open Records,10410,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
 
 If this cannot be accessed, the parcel file including situs address would suffice.
@@ -605,7 +605,7 @@ ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/daup
 If this cannot be accessed, the parcel file including situs address would suffice.
 
 Other names for this include: E911 Address Database, Civic Address File, Parcel Dataset, Land Ownership Dataset, Tax Parcels, Address Points.",,False,13,14,OpenAddresses US FOIA Data Collection,
-ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/delaware-county-27278/civic-address-dataset-46073/,Delaware County,27278,Open Records,10376,,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
+ingalls,Civic Address Dataset,Awaiting Acknowledgement,www.muckrock.com/foi/delaware-county-27278/civic-address-dataset-46073/,Delaware County,27278,Open Records,10376,2017-11-30,,"A Shapefile or CSV containing at minimum the Address Points (house # and street name) and their corresponding Latitude/Longitude. If additional data such as the Unit Number, City, Zipcode, Parcel Id exists they should be included as well.
 
 If this cannot be accessed, the parcel file including situs address would suffice.
 

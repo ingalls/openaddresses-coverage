@@ -1,11 +1,12 @@
 GEOID,STATUS,SITE
 42061,Completed,www.muckrock.com/foi/huntingdon-county-27286/civic-address-dataset-46076/
 42031,Awaiting Response,www.muckrock.com/foi/clarion-county-27271/civic-address-dataset-46080/
+26031,Awaiting Response,www.muckrock.com/foi/cheboygan-county-16679/cheboygan-mi-civic-address-data-46196/
 26085,Withdrawn,www.muckrock.com/foi/lake-county-16706/lake-mi-civic-address-data-46218/
 26011,Awaiting Response,www.muckrock.com/foi/arenac-county-16669/arenac-mi-civic-address-data-46222/
 05021,No Responsive Documents,www.muckrock.com/foi/clay-county-9592/roscommon-mi-civic-address-data-46268/
 05067,Processing,www.muckrock.com/foi/jackson-county-9614/jackson-ar-civic-address-data-46271/
-26085,Awaiting Acknowledgement,www.muckrock.com/foi/lake-county-16706/lake-mi-gis-data-distribution-46423/
+26085,Awaiting Response,www.muckrock.com/foi/lake-county-16706/lake-mi-gis-data-distribution-46423/
 42115,Awaiting Response,www.muckrock.com/foi/susquehanna-county-27312/civic-address-dataset-46048/
 42107,Awaiting Response,www.muckrock.com/foi/schuylkill-county-27308/civic-address-dataset-46068/
 42063,Awaiting Response,www.muckrock.com/foi/indiana-county-27287/civic-address-dataset-46083/
@@ -78,7 +79,6 @@ GEOID,STATUS,SITE
 32009,Awaiting Acknowledgement,www.muckrock.com/foi/esmeralda-county-8886/esmeralda-nv-civic-address-data-46285/
 42091,Awaiting Response,www.muckrock.com/foi/montgomery-county-27301/civic-address-dataset-46072/
 42093,Completed,www.muckrock.com/foi/montour-county-27302/civic-address-dataset-46074/
-26031,Awaiting Acknowledgement,www.muckrock.com/foi/cheboygan-county-16679/cheboygan-mi-civic-address-data-46196/
 26141,Awaiting Acknowledgement,www.muckrock.com/foi/presque-isle-county-16734/preque-isle-mi-civic-address-data-46197/
 26137,Awaiting Acknowledgement,www.muckrock.com/foi/otsego-county-16732/otsego-mi-civic-address-data-46200/
 26079,Awaiting Acknowledgement,www.muckrock.com/foi/kalkaska-county-16703/kalkaska-mi-civic-address-data-46205/

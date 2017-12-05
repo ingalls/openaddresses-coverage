@@ -8,8 +8,6 @@ echo "ok - UPDATING FOIA"
 
 echo "GEOID,STATUS,SITE" > $(dirname $0)/map/foia.csv
 
-    set -x
-
 tail +2 $(dirname $0)/map/muckrock.csv | csvcut -d, -q'"' -c3,4,6 | while read -r line; do
     STATUS=$(echo $line | csvcut -d, -q'"' -c1)
     SITE=$(echo $line | csvcut -d, -q'"' -c2)
