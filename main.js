@@ -5,14 +5,40 @@ window.onload = () => {
     window.vue = new Vue({
         el: '#app',
         data: {
+            modal: {
+                type: false,
+                login: {
+                    username: '',
+                    password: ''
+                }
+            },
             credentials: {
-                map: { key: 'pk.eyJ1IjoiaW5nYWxscyIsImEiOiJsUDF2STRrIn0.S0c3ZNH4HmseIdPXY-CTlA' }
+                map: { key: 'pk.eyJ1IjoiaW5nYWxscyIsImEiOiJsUDF2STRrIn0.S0c3ZNH4HmseIdPXY-CTlA' },
+                muckrock: false
             },
             county: false
         },
         created: function() { },
         watch: { },
         methods: {
+            login: function() {
+                fetch('https://www.muckrock.com/api_v1/token-auth/', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        username: this.modal.login.username,
+                        password: this.modal.login.password
+                    }),
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    })
+                }).then((response) => {
+                    return response.json();
+                }).then((body) => {
+                    this.credentials.muckrock = body.token;
+
+                    this.modal.login.password = '';
+                });
+            },
             county_get: function(clicked) {
                 this.county = clicked.properties;
             }
