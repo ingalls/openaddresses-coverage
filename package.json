@@ -1,0 +1,13 @@
+{
+  "name": "openaddresses-coverage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ingalls/openaddresses-coverage",
+  "author": "ingalls <ingalls@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "http-proxy": "^1.16.2"
+  }
+}

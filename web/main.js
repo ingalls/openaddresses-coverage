@@ -18,21 +18,26 @@ window.onload = () => {
             },
             county: false
         },
-        created: function() { },
+        created: function() {
+            if (localStorage.muckrock) this.credentials.muckrock = localStorage.muckrock;
+        },
         watch: { },
         methods: {
             login: function() {
-                fetch('/muckrock/token-auth/', {
+                fetch('/api_v1/token-auth/', {
                     method: 'POST',
                     body: JSON.stringify({
                         username: this.modal.login.username,
                         password: this.modal.login.password
+                    }),
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
                     })
                 }).then((response) => {
                     return response.json();
                 }).then((body) => {
                     this.credentials.muckrock = body.token;
-
+                    localStorage.muckrock = body.token;
                     this.modal.login.password = '';
                 });
             },
