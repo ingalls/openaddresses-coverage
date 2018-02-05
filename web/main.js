@@ -14,15 +14,100 @@ window.onload = () => {
             },
             credentials: {
                 map: { key: 'pk.eyJ1IjoiaW5nYWxscyIsImEiOiJsUDF2STRrIn0.S0c3ZNH4HmseIdPXY-CTlA' },
-                muckrock: false
+                muckrock: {
+                    username: false,
+                    token: false
+                }
+            },
+            requests: [
+            
+            ],
+            places: {
+
             },
             county: false
         },
         created: function() {
-            if (localStorage.muckrock) this.credentials.muckrock = localStorage.muckrock;
+            if (localStorage.muckrock) {
+                try {
+                    this.credentials.muckrock = JSON.parse(localStorage.muckrock);
+                } catch (err) {
+                    delete localStorage.muckrock
+                }
+            }
         },
-        watch: { },
+        watch: {
+            'credentials.muckrock': function() {
+                if (this.credentials.muckrock) this.requests_load();
+            }
+        },
         methods: {
+            places_load: function(places) {
+                if (!places) places = Object.keys(places);
+
+                if (!places.length) {
+                    console.error('Done Loading');
+                    return;
+                }
+
+                let place_id = places.pop();
+
+                fetch(`/api_v1/jurisdiction/${place_id}`, {
+                    method: 'GET',
+                    headers: new Headers({
+                        'content-type': 'application/json',
+                        Authorization: `Token ${this.credentials.muckrock.token}`
+                    })
+                }).then((response) => {
+                    return response.json();
+                }).then((body) => {
+
+                    //Format "/place/united-states-of-america/state/county/",
+
+                    this.places[place_id]
+                });
+            },
+            requests_parse: function() {
+                for (let req_it = 0; req_it < this.requests.length; req_it++) {
+                    let req = this.requests[req_it];
+
+                    if (this.places[req.jurisdiction]) {
+                        this.places[req.jurisdiction].requests.push(req_it);
+                    } else {
+                        this.places[req.jurisdiction] = {
+                            id: req.jurisdiction,
+                            state: '',
+                            county: '',
+                            city: '',
+                            requests: []
+                        }
+                    }
+                }
+            },
+            requests_load: function(url) {
+                if (!url) url = `/api_v1/foia/?user=${encodeURIComponent(this.credentials.muckrock.username)}`;
+                
+                fetch(url, {
+                    method: 'GET',
+                    headers: new Headers({
+                        'content-type': 'application/json',
+                        Authorization: `Token ${this.credentials.muckrock.token}`
+                    })
+                }).then((response) => {
+                    return response.json();
+                }).then((body) => {
+                    this.requests = this.requests.concat(body.results);
+
+                    //TODO remove
+                    delete body.next;
+                    
+                    if (body.next) {
+                        this.requests_load(body.next.replace('https://www.muckrock.com', ''));
+                    } else {
+                        this.requests_parse();
+                    }
+                });
+            },
             login: function() {
                 fetch('/api_v1/token-auth/', {
                     method: 'POST',
@@ -37,7 +122,10 @@ window.onload = () => {
                     return response.json();
                 }).then((body) => {
                     this.credentials.muckrock = body.token;
-                    localStorage.muckrock = body.token;
+                    localStorage.muckrock = JSON.stringify({
+                        username: this.modal.login.username,
+                        token: body.token
+                    });
                     this.modal.login.password = '';
                 });
             },
