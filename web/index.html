@@ -46,8 +46,10 @@
                             <div align="center">Requests</div>
                         </div>
 
-                        <div v-for='place in places' class='px12 py3 clearfix bg-white'>
-                            <div v-text='place.jurisdiction'></div>
+                        <div v-for='place in place_ids' class='px12 py3 clearfix bg-white cursor-pointer'>
+                            <div v-if="places[place].city">City: {{places[place].city}}, {{places[place].state}}</div>
+                            <div v-else-if="places[place].county">County: {{places[place].county}}, {{places[place].state}}</div>
+                            <div v-else>{{places[place].state}}</div>
                         </div>
 
                         <div class='px12 py12 bg-gray-faint round-b-ml txt-s flex-child'>

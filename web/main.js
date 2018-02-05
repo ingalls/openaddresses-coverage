@@ -22,9 +22,8 @@ window.onload = () => {
             states: [],
             counties: [],
             requests: [],
-            places: {
-
-            },
+            places: { },
+            place_ids: [],
             county: false
         },
         created: function() {
@@ -73,7 +72,7 @@ window.onload = () => {
                     let county = false;
                     let city = false;
                     if (countycity && countycity.match(/(County|Parish|Borough)/i)) {
-                        county = countycity.replace(/(County|Parish|Borough)/i, '').replace(/-/, '');
+                        county = countycity.replace(/(County|Parish|Borough)/i, '').replace(/-/, ' ').trim();
                     } else if (countycity) {
                         city = countycity;
                     }
@@ -81,6 +80,10 @@ window.onload = () => {
                     this.places[place_id].state = state;
                     this.places[place_id].county = county;
                     this.places[place_id].city = city;
+
+                    if (this.place_ids.indexOf(body.id) == -1) {
+                        this.place_ids.push(body.id);
+                    }
 
                     this.places_load(keys);
                     
