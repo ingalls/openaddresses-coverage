@@ -1,0 +1,16 @@
+{
+    "id": 27286,
+    "name": "Huntingdon County",
+    "slug": "huntingdon-county",
+    "full_name": "Huntingdon County, PA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 126,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/pennsylvania/huntingdon-county/",
+    "average_response_time": 13,
+    "fee_rate": 0,
+    "success_rate": 100
+}

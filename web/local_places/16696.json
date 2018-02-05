@@ -1,0 +1,16 @@
+{
+    "id": 16696,
+    "name": "Ingham County",
+    "slug": "ingham-county",
+    "full_name": "Ingham County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/ingham-county/",
+    "average_response_time": 10,
+    "fee_rate": 25,
+    "success_rate": 25
+}

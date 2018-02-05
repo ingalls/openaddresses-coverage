@@ -1,0 +1,16 @@
+{
+    "id": 16720,
+    "name": "Missaukee County",
+    "slug": "missaukee-county",
+    "full_name": "Missaukee County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/missaukee-county/",
+    "average_response_time": 16,
+    "fee_rate": 100,
+    "success_rate": 100
+}

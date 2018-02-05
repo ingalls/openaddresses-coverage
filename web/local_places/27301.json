@@ -1,0 +1,16 @@
+{
+    "id": 27301,
+    "name": "Montgomery County",
+    "slug": "montgomery-county",
+    "full_name": "Montgomery County, PA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 126,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/pennsylvania/montgomery-county/",
+    "average_response_time": 48,
+    "fee_rate": 20,
+    "success_rate": 40
+}

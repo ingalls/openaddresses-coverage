@@ -1,0 +1,16 @@
+{
+    "id": 27946,
+    "name": "Luzerne",
+    "slug": "luzerne",
+    "full_name": "Luzerne, PA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 126,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/pennsylvania/luzerne/",
+    "average_response_time": 21,
+    "fee_rate": 50,
+    "success_rate": 50
+}

@@ -19,9 +19,9 @@ window.onload = () => {
                     token: false
                 }
             },
-            requests: [
-            
-            ],
+            states: [],
+            counties: [],
+            requests: [],
             places: {
 
             },
@@ -35,6 +35,9 @@ window.onload = () => {
                     delete localStorage.muckrock
                 }
             }
+
+            fetch('/counties.json').then(response => { return response.json(); }).then(body => { this.counties = body; });
+            fetch('/states.json').then(response => { return response.json(); }).then(body => { this.states = body; });
         },
         watch: {
             'credentials.muckrock': function() {
@@ -42,15 +45,15 @@ window.onload = () => {
             }
         },
         methods: {
-            places_load: function(places) {
-                if (!places) places = Object.keys(places);
-
-                if (!places.length) {
+            places_load: function(keys) {
+                if (!keys) {
+                    keys = Object.keys(this.places);
+                } else if (!keys.length) {
                     console.error('Done Loading');
                     return;
                 }
 
-                let place_id = places.pop();
+                let place_id = keys.pop();
 
                 fetch(`/api_v1/jurisdiction/${place_id}`, {
                     method: 'GET',
@@ -61,10 +64,33 @@ window.onload = () => {
                 }).then((response) => {
                     return response.json();
                 }).then((body) => {
+                    //Format "/place/united-states-of-america/state/county or city/",
+                    let matchurl = body.absolute_url.match(/united-states-of-america\/(.*?)\/(.*)/);
 
-                    //Format "/place/united-states-of-america/state/county/",
+                    let state = matchurl[1];
+                    let countycity = matchurl[2].replace('/', '');
 
-                    this.places[place_id]
+                    let county = false;
+                    let city = false;
+                    if (countycity && countycity.match(/(County|Parish|Borough)/i)) {
+                        county = countycity.replace(/(County|Parish|Borough)/i, '').trim();
+                    } else if (countycity) {
+                        city = countycity;
+                    }
+
+                    this.places[place_id].state = state;
+                    this.places[place_id].county = county;
+                    this.places[place_id].city = city;
+
+                    this.places_load(keys);
+                    
+                    fetch('save_place', {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                        headers: new Headers({
+                            'content-type': 'application/json'
+                        })
+                    });
                 });
             },
             requests_parse: function() {
@@ -76,13 +102,15 @@ window.onload = () => {
                     } else {
                         this.places[req.jurisdiction] = {
                             id: req.jurisdiction,
-                            state: '',
-                            county: '',
-                            city: '',
+                            state: false,
+                            county: false,
+                            city: false,
                             requests: []
                         }
                     }
                 }
+
+                return this.places_load();
             },
             requests_load: function(url) {
                 if (!url) url = `/api_v1/foia/?user=${encodeURIComponent(this.credentials.muckrock.username)}`;
@@ -98,9 +126,6 @@ window.onload = () => {
                 }).then((body) => {
                     this.requests = this.requests.concat(body.results);
 
-                    //TODO remove
-                    delete body.next;
-                    
                     if (body.next) {
                         this.requests_load(body.next.replace('https://www.muckrock.com', ''));
                     } else {
@@ -116,7 +141,7 @@ window.onload = () => {
                         password: this.modal.login.password
                     }),
                     headers: new Headers({
-                        'Content-Type': 'application/json'
+                        'content-type': 'application/json'
                     })
                 }).then((response) => {
                     return response.json();
