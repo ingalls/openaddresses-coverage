@@ -73,7 +73,7 @@ window.onload = () => {
                     let county = false;
                     let city = false;
                     if (countycity && countycity.match(/(County|Parish|Borough)/i)) {
-                        county = countycity.replace(/(County|Parish|Borough)/i, '').trim();
+                        county = countycity.replace(/(County|Parish|Borough)/i, '').replace(/-/, '');
                     } else if (countycity) {
                         city = countycity;
                     }
