@@ -1,0 +1,16 @@
+{
+    "id": 232,
+    "name": "North Dakota",
+    "slug": "north-dakota",
+    "full_name": "",
+    "abbrev": "ND",
+    "level": "s",
+    "parent": 10,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/north-dakota/",
+    "average_response_time": 35,
+    "fee_rate": 7.960199004975125,
+    "success_rate": 28.855721393034827
+}

@@ -1,0 +1,16 @@
+{
+    "id": 16679,
+    "name": "Cheboygan County",
+    "slug": "cheboygan-county",
+    "full_name": "Cheboygan County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/cheboygan-county/",
+    "average_response_time": 6,
+    "fee_rate": 100,
+    "success_rate": 0
+}

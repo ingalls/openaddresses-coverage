@@ -1,0 +1,16 @@
+{
+    "id": 16676,
+    "name": "Calhoun County",
+    "slug": "calhoun-county",
+    "full_name": "Calhoun County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/calhoun-county/",
+    "average_response_time": 77,
+    "fee_rate": 28.57142857142857,
+    "success_rate": 28.57142857142857
+}

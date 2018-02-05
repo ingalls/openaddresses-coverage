@@ -1,0 +1,16 @@
+{
+    "id": 3040,
+    "name": "Imperial County",
+    "slug": "imperial-county",
+    "full_name": "Imperial County, CA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 52,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/california/imperial-county/",
+    "average_response_time": 80,
+    "fee_rate": 0,
+    "success_rate": 25
+}

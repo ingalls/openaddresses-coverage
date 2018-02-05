@@ -1,0 +1,16 @@
+{
+    "id": 16666,
+    "name": "Allegan County",
+    "slug": "allegan-county",
+    "full_name": "Allegan County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/allegan-county/",
+    "average_response_time": 28,
+    "fee_rate": 0,
+    "success_rate": 0
+}

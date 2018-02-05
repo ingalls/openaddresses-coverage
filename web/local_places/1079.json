@@ -1,0 +1,16 @@
+{
+    "id": 1079,
+    "name": "Westmoreland County",
+    "slug": "westmorel-county",
+    "full_name": "Westmoreland County, PA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 126,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/pennsylvania/westmorel-county/",
+    "average_response_time": 50,
+    "fee_rate": 50,
+    "success_rate": 16.666666666666664
+}

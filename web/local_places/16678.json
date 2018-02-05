@@ -1,0 +1,16 @@
+{
+    "id": 16678,
+    "name": "Charlevoix County",
+    "slug": "charlevoix-county",
+    "full_name": "Charlevoix County, MI",
+    "abbrev": "",
+    "level": "l",
+    "parent": 117,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/charlevoix-county/",
+    "average_response_time": 2,
+    "fee_rate": 0,
+    "success_rate": 100
+}

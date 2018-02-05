@@ -1,0 +1,16 @@
+{
+    "id": 117,
+    "name": "Michigan",
+    "slug": "michigan",
+    "full_name": "",
+    "abbrev": "MI",
+    "level": "s",
+    "parent": 10,
+    "public_notes": "Note: For state agencies and employees, Michigan has a comprehensive contact directory available <a href=\"http://www.state.mi.us/dit/directory.aspx\">here</a>.",
+    "days": 5,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/michigan/",
+    "average_response_time": 40,
+    "fee_rate": 14.435695538057743,
+    "success_rate": 26.246719160104988
+}

@@ -1,0 +1,16 @@
+{
+    "id": 3048,
+    "name": "Mariposa County",
+    "slug": "mariposa-county",
+    "full_name": "Mariposa County, CA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 52,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/california/mariposa-county/",
+    "average_response_time": 0,
+    "fee_rate": 0,
+    "success_rate": 0
+}

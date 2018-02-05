@@ -1,0 +1,16 @@
+{
+    "id": 3069,
+    "name": "Siskiyou County",
+    "slug": "siskiyou-county",
+    "full_name": "Siskiyou County, CA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 52,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/california/siskiyou-county/",
+    "average_response_time": 3,
+    "fee_rate": 0,
+    "success_rate": 100
+}

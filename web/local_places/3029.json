@@ -1,0 +1,16 @@
+{
+    "id": 3029,
+    "name": "Alpine County",
+    "slug": "alpine-county",
+    "full_name": "Alpine County, CA",
+    "abbrev": "",
+    "level": "l",
+    "parent": 52,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/california/alpine-county/",
+    "average_response_time": 12,
+    "fee_rate": 0,
+    "success_rate": 50
+}

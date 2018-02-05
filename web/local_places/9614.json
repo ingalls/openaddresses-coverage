@@ -1,0 +1,16 @@
+{
+    "id": 9614,
+    "name": "Jackson County",
+    "slug": "jackson-county",
+    "full_name": "Jackson County, AR",
+    "abbrev": "",
+    "level": "l",
+    "parent": 114,
+    "public_notes": "",
+    "days": null,
+    "requires_proxy": false,
+    "absolute_url": "/place/united-states-of-america/arkansas/jackson-county/",
+    "average_response_time": 7,
+    "fee_rate": 0,
+    "success_rate": 0
+}
